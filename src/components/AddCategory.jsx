@@ -18,15 +18,13 @@ export const AddCategory = ({setCategories}) => {
 
   return (
     <div>
-        <form onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
             <input 
                 placeholder='Buscar Gif...'
                 type="text" 
                 value={inputValue} 
                 onChange={handleInputChange}> 
             </input>
-        <li></li>
-    
         </form>
      </div>
   )

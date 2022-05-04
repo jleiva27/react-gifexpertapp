@@ -14,16 +14,12 @@ export default function GifExpertApp() {
     // }
     return (
         <div className="page-container">
-            <div className="box1">
-                <div className="titulo">
-                    <h2 className="animate__animated animate__fadeInRightBig">GifExpertApp</h2>
-                </div>
+            <div className="box">
+                    <h2 className="titulo animate__animated animate__fadeInRightBig">GifExpertApp</h2>
             </div>
             <AddCategory setCategories={setCategories} />
+            <div className="container-good-looking">
             <ShowCategories categories={categories} setCategories={setCategories}/>
-            <li></li>
-           
-
             <ol>
                 {
                     categories.map(category => {
@@ -39,6 +35,7 @@ export default function GifExpertApp() {
                 }
 
             </ol>
+            </div>
 
 
         </div>
