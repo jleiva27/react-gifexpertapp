@@ -13,18 +13,21 @@ export const AddCategory = ({setCategories}) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setCategories(cats => [inputValue,...cats]);
+        setInputValue('')
     }
 
   return (
     <div>
         <form onSubmit={handleSubmit}>
             <input 
+                placeholder='Buscar Gif...'
                 type="text" 
                 value={inputValue} 
                 onChange={handleInputChange}> 
             </input>
+        <li></li>
+    
         </form>
-
      </div>
   )
 }
